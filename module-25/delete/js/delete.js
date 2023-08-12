@@ -15,4 +15,5 @@ document.getElementById("delete-confirm").addEventListener("keyup", function (ev
 document.getElementById("delete-btn").addEventListener("click", function () {
     const secret = document.getElementById("secret-info");
     secret.style.display = "none";
+    document.getElementById("delete-confirm").value = "";
 });
