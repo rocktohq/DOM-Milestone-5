@@ -1,6 +1,8 @@
+var i = 1;
 function handlerOnClick() {
     const handlerStatus = document.getElementById("handler-status");
-    handlerStatus.innerText = "Text changed by hander";
+    handlerStatus.innerText = "Text changed by hander and clicked: [" + i+" time(s)]";
+    i++
 }
 
 document.getElementById("changeMsg").addEventListener("click", function () {
@@ -10,6 +12,5 @@ document.getElementById("changeMsg").addEventListener("click", function () {
 
 // DoubleClick
 function doubleClick() {
-    const handerMsg = document.getElementById("handler-msg");
-    handerMsg.innerText = "DoubleClick event triggered";
+    alert("DoubleClick event triggered");
 }
