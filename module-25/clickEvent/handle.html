@@ -5,14 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Handler</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
-    <h1>Final DOM Event Handler</h1>
-    <h2 id="handler-status">Some text</h2>
-    <p id="handler-msg">some message...</p>
-    <button onclick="handlerOnClick()">Change Text</button>
-    <button id="changeMsg">Change Message</button>
+    <main class="max-w-7xl mx-auto">
+        <section class="p-5 lg:p-12 space-y-3">
+            <h1 class="text-3xl font-bold">Final DOM Event Handler</h1>
+            <h2 id="handler-status" class="text-xl font-bold">Some text</h2>
+            <p id="handler-msg">some message...</p>
+            <button onclick="handlerOnClick()" class="btn">Change Text</button>
+            <button id="changeMsg" class="btn btn-primary">Change Message</button>
+            <button ondblclick="doubleClick()" class="btn btn-secondary">Double Click</button>
+        </section>
+    </main>
 
     <script src="assets/js/handler.js"></script>
 </body>
