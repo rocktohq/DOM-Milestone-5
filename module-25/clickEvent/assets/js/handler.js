@@ -3,7 +3,7 @@ function handlerOnClick() {
     handlerStatus.innerText = "Text changed by hander";
 }
 
-const changeMsg = document.getElementById("changeMsg").addEventListener("click", function () {
+document.getElementById("changeMsg").addEventListener("click", function () {
     const handerMsg = document.getElementById("handler-msg");
     handerMsg.innerText = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, temporibus laboriosam culpa quas sint iusto exercitationem perferendis cum eaque iste.";
 });
