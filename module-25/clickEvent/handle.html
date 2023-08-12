@@ -15,11 +15,15 @@
     <main class="max-w-7xl mx-auto">
         <section class="p-5 lg:p-12 space-y-3">
             <h1 class="text-3xl font-bold">Final DOM Event Handler</h1>
-            <h2 id="handler-status" class="text-xl font-bold">Some text</h2>
+            <h2 id="handler-status" class="text-xl font-semibold text-gray-500">Some text</h2>
             <p id="handler-msg">some message...</p>
             <button onclick="handlerOnClick()" class="btn">Change Text</button>
             <button id="changeMsg" class="btn btn-primary">Change Message</button>
             <button ondblclick="doubleClick()" class="btn btn-secondary">Double Click</button>
+        </section>
+        <section class="p-5 lg:p-12">
+            <input type="text" name="message" id="input-message" class="input input-bordered" placeholder="Enter some message">
+            <button id="submit" class="btn btn-primary">Submit</button>
         </section>
     </main>
 

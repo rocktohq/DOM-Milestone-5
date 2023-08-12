@@ -1,7 +1,7 @@
 var i = 1;
 function handlerOnClick() {
     const handlerStatus = document.getElementById("handler-status");
-    handlerStatus.innerText = "Text changed by hander and clicked: [" + i+" time(s)]";
+    handlerStatus.innerText = "Text changed by hander and clicked: [" + i + " time(s)]";
     i++
 }
 
@@ -14,3 +14,14 @@ document.getElementById("changeMsg").addEventListener("click", function () {
 function doubleClick() {
     alert("DoubleClick event triggered");
 }
+
+// Input
+document.getElementById("submit").addEventListener("click", function () {
+    const inputField = document.getElementById("input-message");
+    inputValue = inputField.value;
+
+    const handerMsg = document.getElementById("handler-msg");
+    handerMsg.innerText = inputValue;
+
+    inputField.value = "";
+})
