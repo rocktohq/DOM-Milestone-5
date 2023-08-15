@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Accordion</title>
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Header: START -->
+    <header class="max-w-2xl mx-auto mt-5 lg:mt-12 p-3">
+        <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold text-center">Custom Accordion</h1>
+        <hr class="my-5">
+    </header>
+    <!-- Header: END -->
+    <!-- Main: START -->
+    <main class="max-w-2xl mx-auto mt-5 lg:mt-12">
+        <section class="p-10 shadow-md mx-3 md-mx-0">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-center mb-5">Frequently Asked Questions(FAQ)</h2>
+            <!-- Question - 1 -->
+            <div class="my-3 space-y-2 shadow-sm p-3 accordion">
+                <h3 id="accordion-title-1" class="text-gray-600 text-xl md:text-2xl font-medium flex justify-between accordion-item"><span>Question no - 1</span><span id="accordion-toggler-1" class="p-1 cursor-pointer">-</span></h3>
+                <p id="accordion-text-1" class="text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint vel sapiente dignissimos, obcaecati facilis assumenda.</p>
+            </div>
+            <!-- Question - 2 -->
+            <div class="my-3 space-y-2 shadow-sm p-3 accordion">
+                <h3 id="accordion-title-2" class="text-gray-600 text-xl md:text-2xl font-medium flex justify-between accordion-item"><span>Question no - 2</span><span id="accordion-toggler-2" class="p-1 cursor-pointer">+</span></h3>
+                <p id="accordion-text-2" class="text-gray-500 hidden">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint vel sapiente dignissimos, obcaecati facilis assumenda.</p>
+            </div>
+            <!-- Question - 3 -->
+            <div class="my-3 space-y-2 shadow-sm p-3 accordion">
+                <h3 id="accordion-title-3" class="text-gray-600 text-xl md:text-2xl font-medium flex justify-between accordion-item"><span>Question no - 3</span><span id="accordion-toggler-3" class="p-1 cursor-pointer">+</span></h3>
+                <p id="accordion-text-3" class="text-gray-500 hidden">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint vel sapiente dignissimos, obcaecati facilis assumenda.</p>
+            </div>
+        </section>
+    </main>
+    <!-- Main: END -->
+    <!-- Footer: START -->
+    <footer class="max-w-2xl mx-auto mt-5 lg:mt-12 p-3">
+        <hr class="my-5">
+        <p class="text-center">&copy; CustomAccordion&trade; 2023. All right reserved.</p>
+        <p class="text-center text-gray-400 font-medium">[<a href="https://github.com/rocktohq/baaper-bank"><span
+                    class="text-cyan-500">&#8944; Github</span>: <span class="text-red-500">Source Code
+                    &#8945;</span></a>]</p>
+    </footer>
+    <!-- Footer: END -->
+
+    <!-- Scripts: START -->
+    <script src="js/accordion.js"></script>
+    <!-- Scripts: END -->
+</body>
+
+</html>
