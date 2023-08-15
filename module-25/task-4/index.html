@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Show/Hide</title>
+    <style>
+        .text-center {
+            text-align: center;
+        }
+
+        .input-container {
+            position: relative;
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        input {
+            padding: 10px 20px;
+            outline: none;
+            width: 80%;
+        }
+
+        #show-hide {
+            position: absolute;
+            font-size: 1.5rem;
+            right: 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center">Show or Hide Password</h1>
+    <div class="input-container">
+        <input id="password" type="password" placeholder="Enter your password">
+        <span id="show-hide">&#128065;</span>
+    </div>
+
+    <script src="password.js"></script>
+</body>
+
+</html>
