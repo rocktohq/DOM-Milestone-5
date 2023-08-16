@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Discount</title>
+    <!-- TailwindCSS and DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/4400/4400968.png" type="image/x-icon">
+</head>
+
+<body class="max-w-5xl mx-auto">
+    <!-- Header: START -->
+    <header class="my-10 mx-2">
+        <h1 class="text-center text-4xl lg:text-6xl font-bold">iPhone on <span class="text-red-500">Discount</span></h1>
+    </header>
+    <!-- Header: END -->
+
+    <!-- Main: START -->
+    <main class="mx-2">
+        <!-- Product -->
+        <section>
+            <div
+                class="flex flex-col md:flex-row gap-5 justify-between items-center bg-cyan-50 p-10 shadow-md rounded-md">
+                <div class="flex flex-col md:flex-row gap-5 justify-between items-center">
+                    <img src="assets/img/iphone-14-pro-max.jpg" class="w-28" alt="">
+                    <div class="flex-1">
+                        <h2 class="text-3xl font-bold mb-4">iPhone 14 Pro Max</h2>
+                        <p class="text-xl">Regular Price: <span id="regular-price">135000</span> BDT</p>
+                        <p class="text-xl">Coupon: Use <span id="coupon-code"
+                                class="text-red-500 font-semibold">DISC30</span> to get
+                            <span id="discount-percenpage">30</span>% discount
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold mb-5 text-center">Apply Coupon</h3>
+                    <input type="text" class="input border-primary focus:outline-none rounded" id="coupon-input"
+                        placeholder="Enter Coupon Code">
+                    <button id="discount-btn" class="btn btn-primary rounded" disabled>Apply</button>
+                </div>
+            </div>
+            <div class="bg-blue-50 p-10 shadow-md rounded-md mt-5">
+                <h2 class="text-3xl font-bold text-center mb-10">Produt Checkout</h2>
+                <div class="flex flex-col md:flex-row justify-evenly gap-10">
+                    <div>
+                        <p class="text-xl">Regular Price: 135000 BDT</p>
+                        <p class="text-xl">Discount Price: <span id="discount-price">135000</span> BDT</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary w-full md:w-auto rounded">Pay Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Product -->
+    </main>
+    <!-- Main: END -->
+
+    <!-- Scripts -->
+    <script src="assets/js/discount.js"></script>
+    <!-- Scripts -->
+</body>
+
+</html>
