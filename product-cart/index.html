@@ -24,17 +24,70 @@
     <!-- Header: END -->
 
     <!-- Main: START -->
-    <main class="max-w-screen-xl mx-3 lg:mx-auto my-5 lg:my-12">
-
+    <main class="max-w-screen-xl mx-3 lg:mx-auto my-5 lg:my-12 flex justify-around gap-5">
+        <!-- // ProductList -->
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <!-- Product 1 -->
+            <div class="card card-compact bg-base-100 shadow-xl w-60 h-72">
+                <figure><img class="h-full" src="assets/img/Flower_Pot.png" alt="Flower Pot" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Flower Pot</h2>
+                    <p>Price: <span id="product-1-price">50</span>$</p>
+                    <div class="card-actions">
+                        <button class="btn btn-primary w-full">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="card card-compact bg-base-100 shadow-xl w-60 h-72">
+                <figure><img class="h-full" src="assets/img/Red_Rose.png" alt="Flower Pot" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Red Rose</h2>
+                    <p>Price: <span id="product-2-price">70</span>$</p>
+                    <div class="card-actions">
+                        <button class="btn btn-primary w-full">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="card card-compact bg-base-100 shadow-xl w-60 h-72">
+                <figure><img class="h-full" src="assets/img/pngwing-5.png" alt="Flower Pot" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Flower Bouquet</h2>
+                    <p>Price: <span id="product-3-price">50</span>$</p>
+                    <div class="card-actions">
+                        <button class="btn btn-primary w-full">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="card card-compact bg-base-100 shadow-xl w-60 h-72">
+                <figure><img class="h-full" src="assets/img/pngwing-10.png" alt="Flower Pot" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Camellia</h2>
+                    <p>Price: <span id="product-4-price">50</span>$</p>
+                    <div class="card-actions">
+                        <button class="btn btn-primary w-full">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ProductList // -->
+        <!-- // Cart -->
+        <aside class="px-5">
+            <h2 class="text-2xl font-bold text-center">Selected Products</h2>
+            <hr class="border-gray-200 mt-1">
+        </aside>
+        <!-- Cat // -->
     </main>
     <!-- Main: END -->
 
     <!-- Footer: START -->
     <!-- Footer: END -->
 
-    <!-- Scripts ./ -->
+    <!-- // Scripts -->
     <script src="assets/js/product-cart.js"></script>
-    <!-- Scripts /. -->
+    <!-- Scripts // -->
 </body>
 
 </html>
